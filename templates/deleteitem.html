@@ -1,0 +1,17 @@
+<!-- page that opens after clicking the delete button from restaurants and items page, which requires for confirmation before proceeding-->
+
+<body>
+{% extends "main.html" %}
+{% block content %}
+
+<h2> Please confirm you wish to delete {{restaurant.name}} /{{item.name}}</h2>
+<form action="#" method = 'post'>
+	<button id= "buttoneditdelete" id="submit" type="submit">Delete</button>
+</form>
+	<a href = '{{url_for('showItems', restaurant_id = restaurant.id)}}'>
+	<button id= "buttoneditdelete">Cancel</button></a>
+	
+ 
+
+{% endblock %}
+</body>

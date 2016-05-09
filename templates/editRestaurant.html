@@ -1,0 +1,39 @@
+<!-- page to allow edits to happen on Restaurants, opened from click on the button on restaurants page-->
+
+{% extends "main.html" %}
+{% block content %}
+
+<h2> Edit Restaurant</h2>
+
+<h3>
+<div>
+	<form action="{{ url_for('editRestaurant',restaurant_id = restaurant.id)}}" method = "POST">
+	<label for="name">Name:</label>
+	<input type ="text"  name="name" value="{{restaurant.name }}">
+</div>
+</h3>
+	<button id= "buttoneditdelete" id="submit" type="submit">
+	Save</button>
+	<a href = '{{url_for('showRestaurants')}}'>
+	<button id= "buttoneditdelete" >
+	Cancel</button>	
+	</a>
+	
+	
+
+
+ 
+   
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
