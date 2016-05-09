@@ -13,3 +13,4 @@ Setup:
 2. run initial_the_database.py to add restaurants and menu items to the DB.
 3. run project.py
 
+visit http://localhost:5000/ to view the app.
