@@ -11,6 +11,7 @@ import httplib2
 import json
 from flask import make_response, flash
 import requests
+import os
 
 app = Flask(__name__)
 APP_ROOT = os.path.dirname(os.path.abspath(__file__))   # refers to application_top
