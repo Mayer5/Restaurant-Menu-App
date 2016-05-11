@@ -20,7 +20,7 @@ CLIENT_ID = json.loads(
 APPLICATION_NAME = "Restaurant Menu App"
 
 # Database connection and opening session
-engine = create_engine('sqlite:///my_restaurant_menu_app')
+engine = create_engine('postgresql://catalog:sillypassword@localhost/catalog')
 Base.metadata.bind = engine
 
 DBSession = sessionmaker(bind=engine)
