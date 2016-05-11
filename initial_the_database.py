@@ -2,7 +2,8 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from database_setup import Restaurant, Base, Item, User
  
-engine = create_engine('sqlite:///my_restaurant_menu_app')
+engine = create_engine('postgresql://catalog:sillypassword@localhost/catalog')
+# connect to a databse catalog (with USER 'catalog' and PASSWORD 'sillypassword')
 Base.metadata.bind = engine
 DBSession = sessionmaker(bind=engine)
 session = DBSession()

@@ -54,5 +54,6 @@ class Item(Base):
         }
 
 
-engine = create_engine('sqlite:///my_restaurant_menu_app')
+engine = create_engine('postgresql://catalog:sillypassword@localhost/catalog')
+# create a databse catalog (with USER 'catalog' and PASSWORD 'sillypassword')
 Base.metadata.create_all(engine)
