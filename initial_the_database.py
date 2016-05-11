@@ -97,7 +97,7 @@ item2 = Item(user_id=1, name="Chinese Dumplings", description="a common Chinese 
 session.add(item2)
 session.commit()
 
-item3 = Item(user_id=1, name="Gyoza", description="The most prominent differences between Japanese-style gyoza and Chinese-style jiaozi are the rich garlic flavor, which is less noticeable in the Chinese version, the light seasoning of Japanese gyoza with salt and soy sauce, and the fact that gyoza wrappers are much thinner", restaurant=restaurant3)
+item3 = Item(user_id=1, name="Gyoza", description="which is less noticeable in the Chinese version, the light seasoning of Japanese gyoza with salt and soy sauce, and the fact that gyoza wrappers are much thinner", restaurant=restaurant3)
 session.add(item3)
 session.commit()
 
@@ -206,7 +206,7 @@ item3 = Item(user_id=1, name="Morels on toast (seasonal)", description="Wild mor
 session.add(item3)
 session.commit()
 
-item4 = Item(user_id=1, name="Tandoori Chicken", description="Chicken marinated in yoghurt and seasoned with a spicy mix(chilli, tamarind among others) and slow cooked in a cylindrical clay or metal oven which gets its heat from burning charcoal.", restaurant=restaurant7)
+item4 = Item(user_id=1, name="Tandoori Chicken", description="Chicken marinated in yoghurt and seasoned with a spicy mix(chilli, tamarind among others) and slow cooked in a cylindrical clay.", restaurant=restaurant7)
 session.add(item4)
 session.commit()
 
