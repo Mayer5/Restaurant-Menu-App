@@ -14,6 +14,7 @@ import requests
 import os
 
 app = Flask(__name__)
+app.secret_key = 'B1Z708j/d6X R~~XH6jmdP5M3/,?GT'
 APP_ROOT = os.path.dirname(os.path.abspath(__file__))   # refers to application_top
 CLIENT_ID = json.loads(
     open(APP_ROOT + '/client_secrets.json', 'r').read())['web']['client_id']
